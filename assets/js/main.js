@@ -11,8 +11,8 @@
     
     async function loadSlides() {
     try {
-        const response = await fetch('https://run.mocky.io/v3/e13e550c-1bdd-48ac-914d-6d6332df0cf8'); // Replace with your raw Pastebin URL
-        const data = await response.json();
+       const response = await fetch('./assets/data.json');
+       const data = await response.json();
         const swiperWrapper = document.querySelector('.swiper-wrapper');
 
         // Clear existing slides
