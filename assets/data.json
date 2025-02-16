@@ -1,15 +1,51 @@
 {
   "slides": [
     {
-      "image": "https://storage.googleapis.com/a1aa/image/xM6wd69CpxBxY3yvVdCEk2mDdAXfH789d9rAiZJ7sMU.jpg",
+      "image": "/assets/images/slides/home.jpg",
       "title": "Unified Control Panel",
-      "description": "Manage all connected devices from a single intuitive interface",
+      "description": "Manage all connected devices from a single intuitive interface.",
       "url": "https://t.me/DeviceLinker"
     },
     {
-      "image": "https://storage.googleapis.com/a1aa/image/0KRekNPFrxRk0W994CPV9WnxE28wb3R4HYimKbApEpE.jpg",
-      "title": "Best Management",
-      "description": "Control devices through natural chat commands in Telegram",
+      "image": "/assets/images/slides/main.jpg",
+      "title": "Seamless Device Management",
+      "description": "Control and monitor your devices with a user-friendly dashboard.",
+      "url": "https://t.me/DeviceLinker"
+    },
+    {
+      "image": "/assets/images/slides/apps.jpg",
+      "title": "All Apps in One Place",
+      "description": "Access and manage all your applications from a single hub.",
+      "url": "https://t.me/DeviceLinker"
+    },
+    {
+      "image": "/assets/images/slides/call-log.jpg",
+      "title": "Call Log Insights",
+      "description": "Track and review your call history effortlessly.",
+      "url": "https://t.me/DeviceLinker"
+    },
+    {
+      "image": "/assets/images/slides/contacts.jpg",
+      "title": "Smart Contacts Management",
+      "description": "Easily find, edit, and manage your contacts in one place.",
+      "url": "https://t.me/DeviceLinker"
+    },
+    {
+      "image": "/assets/images/slides/sms-view.jpg",
+      "title": "SMS Viewer",
+      "description": "Read and manage all your text messages with ease.",
+      "url": "https://t.me/DeviceLinker"
+    },
+    {
+      "image": "/assets/images/slides/sms.jpg",
+      "title": "Instant Messaging",
+      "description": "Send and receive SMS messages directly from your control panel.",
+      "url": "https://t.me/DeviceLinker"
+    },
+    {
+      "image": "/assets/images/slides/tools.jpg",
+      "title": "Essential Tools",
+      "description": "A collection of powerful tools to enhance your productivity.",
       "url": "https://t.me/DeviceLinker"
     }
   ]
