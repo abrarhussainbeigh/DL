@@ -102,7 +102,11 @@ function playDemo() {
                     <iframe 
                         width="100%" 
                         height="100%" 
+<<<<<<< HEAD
                         src="https://www.youtube.com/embed/YOUR_DEMO_VIDEO_ID" 
+=======
+                        src="https://www.youtube.com/embed/KnN4K1VYnSk" 
+>>>>>>> 869af17 (Initial upload of files)
                         frameborder="0" 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                         allowfullscreen>
@@ -252,3 +256,79 @@ function showNotification(message, type = 'success') {
         }, 3000);
     });
 }
+<<<<<<< HEAD
+=======
+
+
+
+ // Elements ko select karo
+        const modal = document.getElementById("gdprModal");
+        const openBtn = document.getElementById("openModalBtn");
+         
+        const gdprContent = document.getElementById("gdprContent");
+
+        // Function: GDPR content load karne ka
+        function loadGDPRContent() {
+            fetch("gdpr.html") // External HTML file ka path
+                .then(response => response.text())
+                .then(data => {
+                    gdprContent.innerHTML = data; // GDPR ka content modal me inject karo
+                })
+                .catch(error => {
+                    gdprContent.innerHTML = "<p class='text-red-500'>Error loading content.</p>";
+                    console.error("Error loading GDPR content:", error);
+                });
+        }
+
+        // Open Modal
+        openBtn.addEventListener("click", function () {
+            modal.classList.remove("hidden"); 
+            loadGDPRContent(); // Content load karo jab modal khule
+        });
+
+         
+
+        // Click outside to close
+        window.addEventListener("click", function (event) {
+            if (event.target === modal) {
+                modal.classList.add("hidden");
+            }
+        });
+        
+         // Elements ko select karo
+        const privacyModal = document.getElementById("privacyModal");
+        const openPrivacyBtn = document.getElementById("openPrivacyBtn");
+         
+        const privacyContent = document.getElementById("privacyContent");
+
+        // Function: Privacy Policy content load karne ka
+        function loadPrivacyContent() {
+            fetch("privacy-policy.html") // External HTML file ka path
+                .then(response => response.text())
+                .then(data => {
+                    privacyContent.innerHTML = data; // Privacy policy ka content modal me inject karo
+                })
+                .catch(error => {
+                    privacyContent.innerHTML = "<p class='text-red-500'>Error loading content.</p>";
+                    console.error("Error loading Privacy Policy content:", error);
+                });
+        }
+
+        // Open Modal
+        openPrivacyBtn.addEventListener("click", function () {
+            privacyModal.classList.remove("hidden"); 
+            loadPrivacyContent(); // Content load karo jab modal khule
+        });
+
+      
+
+        // Click outside to close
+        window.addEventListener("click", function (event) {
+            if (event.target === privacyModal) {
+                privacyModal.classList.add("hidden");
+            }
+        });
+        
+        
+        
+>>>>>>> 869af17 (Initial upload of files)

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Payment | Device Linker</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/js/all.min.js"></script>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Main Container -->
+    <div class="max-w-4xl mx-auto p-6">
+        <!-- Header Section -->
+        <header class="bg-gradient-to-r from-blue-500 to-purple-600 text-white p-4 rounded-lg shadow-lg">
+            <h1 class="text-3xl font-bold">Instant Crypto Payment</h1>
+            <p class="mt-2">Pay with USDT (TRC20) for premium access</p>
+        </header>
+
+        <!-- Payment Section -->
+        <div class="bg-white rounded-lg shadow-lg mt-6 p-6">
+            <h2 class="text-2xl font-semibold mb-4">Payment Details</h2>
+            <div class="flex flex-col md:flex-row gap-6">
+                <!-- QR Code Section -->
+                <div class="flex-1">
+                    <div class="border-2 border-dashed border-blue-300 p-4 rounded-lg text-center">
+                        <p class="text-gray-600 mb-2">Scan the QR Code</p>
+                        <img src="/assets/images/icon.png" alt="QR Code" class="w-64 h-64 mx-auto mb-4">
+                        <div class="relative">
+                            <div class="bg-gray-100 p-3 rounded-lg">
+                                <code id="walletAddress" class="text-sm font-mono break-words">TYourWalletAddressHere123456789</code>
+                                <button onclick="copyAddress()" class="absolute right-2 top-2 bg-blue-500 text-white px-2 py-1 rounded-md text-sm hover:bg-blue-600">
+                                    Copy
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Instructions Section -->
+                <div class="flex-1">
+                    <h3 class="text-xl font-semibold mb-2">Instructions</h3>
+                    <ol class="list-decimal list-inside space-y-2">
+                        <li>Send the exact amount to the wallet address above.</li>
+                        <li>Use the TRC20 network for the transaction.</li>
+                        <li>After payment, go to our <a href="https://t.me/yourbot" class="text-blue-500 underline">Telegram Bot</a> to verify your transaction.</li>
+                    </ol>
+                    <div class="mt-4 bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded-lg">
+                        <p class="font-medium text-yellow-800">Important:</p>
+                        <ul class="list-disc list-inside text-yellow-700">
+                            <li>Minimum payment: $10 USDT</li>
+                            <li>Do NOT send from exchange wallets.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Status Indicator -->
+        <div class="mt-6 text-center text-sm text-gray-500">
+            <p>Verification usually takes 10-15 minutes after payment.</p>
+        </div>
+    </div>
+
+    <script>
+        function copyAddress() {
+            const address = document.getElementById('walletAddress');
+            navigator.clipboard.writeText(address.innerText);
+            alert('Wallet address copied to clipboard!');
+        }
+    </script>
+</body>
+</html>
