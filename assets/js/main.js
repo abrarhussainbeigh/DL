@@ -102,11 +102,7 @@ function playDemo() {
                     <iframe 
                         width="100%" 
                         height="100%" 
-<<<<<<< HEAD
-                        src="https://www.youtube.com/embed/YOUR_DEMO_VIDEO_ID" 
-=======
                         src="https://www.youtube.com/embed/KnN4K1VYnSk" 
->>>>>>> 869af17 (Initial upload of files)
                         frameborder="0" 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                         allowfullscreen>
@@ -256,8 +252,6 @@ function showNotification(message, type = 'success') {
         }, 3000);
     });
 }
-<<<<<<< HEAD
-=======
 
 
 
@@ -331,4 +325,3 @@ function showNotification(message, type = 'success') {
         
         
         
->>>>>>> 869af17 (Initial upload of files)
