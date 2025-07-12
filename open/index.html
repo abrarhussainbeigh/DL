@@ -14,20 +14,7 @@
     document.getElementById("msg").textContent = msg ? `Message: ${msg}` : "No message received.";
   </script>
 
-<script>
-  // Change to your app's scheme or fallback URL if installed
-  const fallbackUrl = "https://t.me/koshurboii";
-
-  // Try to open app
-  window.location.href = "intent://open?msg=test123#Intent;scheme=https;package=test.me;end;";
-
-  // After 2 seconds, if still on page, show fallback
-  setTimeout(() => {
-    // User stayed on web (likely app not installed or blocked)
-    const fallback = document.getElementById("fallback");
-    if (fallback) fallback.style.display = "block";
-  }, 2000);
-</script>
+ 
   
 </body>
 </html>
