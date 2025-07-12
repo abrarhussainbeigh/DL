@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Deep Link Test</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <h1>🔗 Deep Link Triggered!</h1>
+  <p id="msg">Loading...</p>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const msg = params.get("msg");
+    document.getElementById("msg").textContent = msg ? `Message: ${msg}` : "No message received.";
+  </script>
+</body>
+</html>
